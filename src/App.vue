@@ -10,6 +10,7 @@
         />
         <div v-if="isLoading">Loading...</div>
         <button class="submit" @click="submit">Login</button>
+        <button class="logout" id="red" @click="logout">Logout</button>
       </form>
     </div>
   </div>
@@ -63,6 +64,12 @@ export default {
           this.isLoading = false;
           alert(`${error.message}`);
         });
+    },
+    logout() {
+      axios
+        .get("http://3.80.215.203/api/logout")
+        .then((data) => alert(data))
+        .catch((error) => alert(error));
     },
   },
   mounted() {

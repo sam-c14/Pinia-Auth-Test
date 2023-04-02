@@ -32,6 +32,13 @@
   color: white;
   border-color: goldenrod;
 }
+#red {
+  color: red;
+}
+#red:hover {
+  background: red;
+  color: white;
+}
 @media (max-width: 660px) {
   .form-container {
     padding-inline: 3vw;
