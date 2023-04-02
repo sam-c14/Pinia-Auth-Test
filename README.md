@@ -27,3 +27,4 @@ npm run dev
 ```sh
 npm run build
 ```
+# Pinia was used alongside localStorage to ensure on reloads that the auth status is not cleared.
